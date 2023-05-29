@@ -5,20 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+    rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/general.css" />
-    <link rel="stylesheet" href="../css/banker.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-    <script defer src="../js/modal.js"></script>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
     <title>Document</title>
   </head>
-  <body>
+  <body> 
     <!-- <img class="logo" src="logo.png" alt=""> -->
     <nav class="nav">
       <div class="main-container">
@@ -27,160 +23,88 @@
         <div class="nav-item">LeftContent</div>
       </div>
     </nav>
-
+  
     <div class="search-container">
       <div class="search-bar">
         <input class="input" type="text" placeholder="Search" />
         <button type="submit"><i class="fa fa-search"></i></button>
       </div>
     </div>
+    
 
+    
     <main>
       <div class="main-container1">
         <section class="left-section">
           <h1>Credit Cards Requests</h1>
-          <br />
-          <hr />
-          <li class="credit-link">
-            <a class="link btn--show-modal" href="#">View Requests</a>
-          </li>
+          <br ><hr>
+          <li class="credit-link"><a class="link" href="credit-popup.html">view Requests</a></li>
         </section>
         <section class="right-section">
           <h2>Loans Requests</h2>
-          <br />
-          <hr />
-          <li class="loan-link">
-            <a class="link btn--show-modals modal1" href="#">View Requests</a>
-          </li>
+          <br><hr>
+          <li class="loan-link"><a class="link" href="loan-popup.html">view Requests</a></li>
         </section>
       </div>
+
 
       <div class="main-container2">
         <section class="left-section">
           <h3>Announcements</h3>
-          <br />
-          <hr />
+          <br><hr>
           <!-- <li class="Announce-link"><a href="">Add Announcements</a></li> -->
-          <button class="additional-button btn--show-modals modal2">
-            <a href="#">+</a>
-          </button>
+          <button class="additional-button"><a href="">+</a></button>
         </section>
         <section class="right-section">
-          <h4>Credit Card Issues</h4>
-          <br />
-          <hr />
-          <li class="issue-link">
-            <a class="link btn--show-modals modal3" href="#">View Issues</a>
-          </li>
+          <h4>Credit Card Issues</h4>          
+          <br><hr>
+          <li class="issue-link"><a class="link" href="Issues-popup.html">view Issues</a></li>
         </section>
       </div>
+
     </main>
 
-    <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
-      <h2 class="modal__header">Credit Card Requests</h2>
-      <div class="transactions-container">
-        <ul class="transaction-items-fields">
-          <li>Client ID</li>
-          <li>Timestamp</li>
-          <li>Annual Income</li>
-          <li>Action</li>
-        </ul>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <div class="modal modal1 hidden">
-      <button class="btn--close-modal">&times;</button>
-      <h2 class="modal__header">Loans Requests</h2>
-      <div class="transactions-container">
-        <ul class="transaction-items-fields">
-          <li>Client ID</li>
-          <li>Timestamp</li>
-          <li>Annual Income</li>
-          <li>Action</li>
-        </ul>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-        <div class="transaction-item">
-          <ul class="transaction-items-content">
-            <li>155</li>
-            <li>25/3/2022 14:56</li>
-            <li>70, 000 USD</li>
-            <li><button>Accept</button></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="overlay hidden"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function openPopup(url) {
+          var popupWidth = 500;
+          var popupHeight = 300;
+          var left = window.screen.width / 2 - popupWidth / 2;
+          var top = window.screen.height / 2 - popupHeight / 2;
+          var popupFeatures =
+            "width=" +
+            popupWidth +
+            ",height=" +
+            popupHeight +
+            ",top=" +
+            top +
+            ",left=" +
+            left +
+            ",resizable=yes,scrollbars=yes,status=yes";
+  
+          window.open(url, "popupWindow", popupFeatures);
+        }
+  
+        var viewRequestLinks = document.querySelectorAll("a[href='']");
+        viewRequestLinks.forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            openPopup("popup.html");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
+  
+  
+<!-- <h2>Zeyad Mohamed Abdelghaffar</h2>
+  <h3 class="balance-text">
+    Total Balance: <span class="balance-num">76, 800 USD</span>
+  </h3>
+  <h3>Recent Transactions</h3>
+  <div class="transactions-container"></div> -->
+  <!-- <h3>Upcoming Bills</h3>
+  <div class="bills-container"></div> -->
