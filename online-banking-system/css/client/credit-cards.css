@@ -1,0 +1,358 @@
+body,
+main {
+  background-color: var(--color-primary-light);
+  color: var(--color-dark);
+}
+
+main .main-container {
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  min-height: calc(100vh - 75px);
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  margin-left: 0.1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  margin-left: 0.1rem;
+}
+
+.section {
+  padding: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.sub-section {
+  padding: 0.6rem;
+}
+
+.top-section {
+  margin-bottom: 0.2rem;
+  justify-content: space-between;
+  gap: 9rem;
+
+  gap: 3rem;
+}
+
+.details-section {
+  /* margin: 0 auto; */
+}
+
+.details-section p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  margin-left: 0.1rem;
+}
+
+.card-points {
+  padding-top: 0.1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card-points p {
+  margin-bottom: -1px;
+}
+
+.redeem-btn {
+  background-color: #57d793;
+  color: var(--color-light);
+  padding: 0.4rem 0.6rem;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 20px;
+  transition: all 0.12s;
+}
+
+.redeem-btn:hover {
+  transition: all 0.12s;
+  transform: scale(1.06);
+}
+
+.accounts-section-container {
+  /* margin: 0 auto; */
+  /* flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center; */
+}
+.accounts-section {
+  margin-right: 5.8rem;
+}
+
+.accounts-section h3 {
+  margin-bottom: 1rem;
+}
+
+.accounts-container {
+  min-width: 280px;
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.account,
+.new-account {
+  width: 9rem;
+  height: 8rem;
+  border-radius: 6px;
+  background-color: var(--color-light);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 0.2rem;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  transition: all 0.12s;
+  opacity: 0.9;
+}
+
+.account:hover,
+.new-account:hover {
+  transition: all 0.12s;
+  transform: scale(1.06);
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+.account {
+  background-color: var(--color-light);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.4rem;
+}
+
+.account:hover {
+  border-top: 0.4rem solid var(--color-accent);
+  transition: all 0.12s;
+}
+
+.new-account {
+  font-size: 0.9rem;
+  text-align: center;
+  gap: 0.3rem;
+  color: #318ef8e9;
+}
+
+.account-info {
+  padding: 0.2rem;
+}
+
+.account-name {
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.new-account > p {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.close-btn {
+  border: none;
+  background-color: #ef6565;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  transition: all 0.12s;
+}
+
+.close-btn:hover {
+  transition: all 0.12s;
+  transform: scale(1.06);
+  background-color: #ff4e4e;
+}
+
+.bottom-section {
+  gap: 3rem;
+  /* gap: 9rem; */
+}
+
+.transactions-section {
+  flex: 1;
+  min-width: 400px;
+  max-width: 700px;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 1.2rem;
+  margin-top: 2.5rem;
+
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 10px;
+}
+
+.transactions-container {
+  min-width: 280px;
+  min-height: auto;
+  max-height: 248px;
+  padding: 1.4rem;
+  padding-top: 0.4rem;
+  background-color: var(--color-light);
+  border-top: 0.4rem solid var(--color-accent);
+  border-radius: 6px;
+  box-shadow: 0px 8px 12px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  overflow: auto;
+}
+
+.transaction-items-fields {
+  min-height: 1.8rem;
+  background-color: var(--color-light);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: -0.4rem;
+  font-weight: 500;
+}
+
+.transaction-items-fields li,
+.transaction-items-content li {
+  flex: 1;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.transaction-item {
+  min-height: 2rem;
+  background-color: #dee5ee;
+  background-color: #d8e6ec89;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+  display: flex;
+}
+
+.transaction-item:hover {
+  background-color: #d8e6ecf0;
+}
+
+.transaction-items-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.transfer-section {
+  max-width: 720px;
+  margin: 0 auto;
+  /* margin-top: -3rem; */
+}
+
+.transfer-container {
+  max-width: 720px;
+  min-width: 340px;
+  max-height: 400px;
+  padding-bottom: 1.2rem;
+  background-color: var(--color-light);
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.transfer-item {
+  /* flex: 1; */
+}
+
+.transfer-types {
+  width: 100%;
+  min-height: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.transfer-types a {
+  font-size: 1.12rem;
+  font-weight: 500;
+  padding: 0.2rem;
+  margin-top: -2px;
+  color: var(--color-dark);
+  line-height: 1.7rem;
+  text-align: center;
+  flex: 1;
+  width: 50%;
+}
+
+.transfer-types a:hover {
+  background-color: #ececec;
+}
+
+.internal-t-btn {
+  border-top-left-radius: 6px;
+}
+
+.external-t-btn {
+  border-top-right-radius: 6px;
+}
+
+.active-transfer-btn {
+  padding-top: 1px;
+  background-color: #ececec;
+  border-bottom: 0.2rem solid var(--color-accent);
+}
+
+.transfer-inputs form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.transfer-btn-container {
+  margin: 0.3rem auto;
+  border: none;
+  transition: all 0.12s;
+}
+
+.transfer-btn {
+  background-color: #57d793;
+  color: var(--color-light);
+
+  padding: 0.5rem 0.7rem;
+  padding-right: 0.8rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.transfer-btn-container:hover {
+  transition: all 0.12s;
+  transform: scale(1.06);
+}
