@@ -1,10 +1,11 @@
+
 body {
-  height: 100%;
+  height:100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-.h-user {
+.h-user{
   color: var(--color-accent);
   font-size: 2.2rem;
   font-weight: 700;
@@ -35,6 +36,7 @@ nav .main-container {
   font-weight: 700;
 }
 
+
 .logo span {
   color: var(--color-accent);
 }
@@ -62,14 +64,15 @@ nav .main-container {
   transform: scale(1.05);
 }
 
-.search-container {
+.search-container{
   display: flex;
   height: 100px;
-  background-color: var(--color-primary-light);
+  background-color:var(--color-primary-light);
   align-items: center;
   justify-content: center;
+
 }
-.search-bar {
+.search-bar{
   display: flex;
   align-items: center;
   width: 500px;
@@ -94,7 +97,7 @@ nav .main-container {
   background-color: var(--color-primary-dark);
   color: #ffffff;
   border: none;
-
+  
   width: 40px;
   height: 100%;
   cursor: pointer;
@@ -106,7 +109,7 @@ nav .main-container {
 }
 
 main {
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   background-color: var(--color-primary-light);
   max-height: auto;
@@ -114,8 +117,7 @@ main {
   display: flex;  
   flex:1; */
 }
-.main-container1,
-.main-container2 {
+.main-container1,.main-container2{
   margin: 0 auto;
   display: flex;
   padding: 20px;
@@ -130,22 +132,21 @@ main {
   align-items: center;
   margin: 0 auto;
 }*/
-.left-section,
-.right-section {
-  border: none;
+.left-section,.right-section{
+  border:none;
   border-top: 0.4rem solid var(--color-accent);
-  margin-right: 40px;
-  margin-left: 40px;
-  background-color: white;
-  max-height: 400px;
+  margin-right:40px;
+  margin-left:40px;
+  background-color:white;
+  max-height:400px;
   align-items: center;
   justify-content: center;
 }
 
 section {
   box-shadow: 9px 8px 8px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  gap: 10px;
+  border-radius: 10px; 
+  gap: 10px; 
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -155,10 +156,10 @@ section {
   max-width: 350px;
   height: 200px;
   margin: 20px;
-  color: var(--color-primary-dark);
-  font-weight: 700;
-  font-size: x-large;
-  font-style: italic;
+  color:var(--color-primary-dark);
+  font-weight: 700  ;
+  font-size:x-large;
+  font-style:italic;
   /* border-radius: 80%; */
   /* align-items: center;   */
   /* justify-content: center; */
@@ -170,11 +171,12 @@ section {
   transform: scale(1.1);  
 }*/
 
+
 .credit-link,
 .loan-link,
 .Announce-link,
-.issue-link {
-  margin-top: 10px;
+.issue-link{
+  margin-top:10px;
   color: var(--color-light);
   transition: all 0.12s;
   display: flex;
@@ -185,8 +187,8 @@ section {
   transition: all 0.09s;
 }
 
-.link {
-  color: var(--color-accent);
+.link{
+  color:var(--color-accent);
 }
 
 .search-container {
@@ -196,11 +198,8 @@ section {
 main {
   min-height: calc(100vh - 168px);
 }
-h1,
-h2,
-h3,
-h4 {
-  margin-top: 10px;
+h1,h2,h3,h4{
+  margin-top:10px;
   font-weight: 600;
 }
 
@@ -215,11 +214,8 @@ h4 {
   border: none;
   cursor: pointer;
 }
-h1,
-h2,
-h3,
-h4 {
-  margin-top: 0px;
+h1,h2,h3,h4{
+  margin-top:0px;
 }
 
 /* .additional-button:hover {
@@ -228,6 +224,10 @@ h4 {
 /* a:hover{
   color: var(--color-accent);
 } */
+
+
+
+
 
 /* .balance-text {
   margin-bottom: auto;
@@ -252,56 +252,3 @@ h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
 } */
-
-.transactions-container {
-  min-width: 280px;
-  min-height: auto;
-  max-height: 248px;
-  padding: 1.4rem;
-  padding-top: 0.4rem;
-  background-color: var(--color-light);
-  border-top: 0.4rem solid var(--color-accent);
-  border-radius: 6px;
-  box-shadow: 0px 8px 12px -3px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  overflow: auto;
-}
-
-.transaction-items-fields {
-  min-height: 1.8rem;
-  background-color: var(--color-light);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: -0.4rem;
-  font-weight: 500;
-}
-
-.transaction-items-fields li,
-.transaction-items-content li {
-  flex: 1;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.transaction-item {
-  min-height: 2rem;
-  background-color: #dee5ee;
-  background-color: #d8e6ec89;
-  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.075);
-  border-radius: 4px;
-  display: flex;
-}
-
-.transaction-item:hover {
-  background-color: #d8e6ecf0;
-}
-
-.transaction-items-content {
-  display: flex;
-  flex: 1;
-  justify-content: space-evenly;
-  align-items: center;
-}
