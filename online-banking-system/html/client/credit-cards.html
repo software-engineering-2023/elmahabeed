@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/general.css" />
+    <link rel="stylesheet" href="../../css/client/credit-cards.css" />
+    <title>Olayan Bank</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="main-container">
+        <div class="nav-item logo"><span>Olayan</span> Bank</div>
+        <ul class="nav-item nav-links">
+          <li class="nav-link"><a href="home.html">Home</a></li>
+          <li class="nav-link"><a href="accounts.html">Accounts</a></li>
+          <li class="nav-link"><a href="credit-cards.html">Credit Cards</a></li>
+          <li class="nav-link"><a href="">Loans</a></li>
+        </ul>
+        <div class="nav-item nav-left">
+          <img src="../../img/bell.svg" alt="" class="notifcation-bell" />
+          <img src="../../img/prof-pic.png" alt="" class="profile-pic" />
+          <div class="nav-name-container">
+            <div class="nav-name">Zeyad</div>
+            <div class="nav-down-arrow">▼</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-container">
+        <section class="section top-section">
+          <section class="details-section sub-section">
+            <h2>Main Card</h2>
+            <div class="details-container">
+              <p>Balance: &nbsp 17, 850 USD</p>
+              <p>Card Number: &nbsp 3782 8224 6310 0051</p>
+              <p>Expiry Date: &nbsp 7/25</p>
+              <p>CCV: &nbsp 997</p>
+              <div class="card-points">
+                <p>Card Points: &nbsp 350</p>
+                <a href="" class="redeem-btn">Redeem</a>
+              </div>
+            </div>
+          </section>
+          <div class="accounts-section-container">
+            <section class="accounts-section sub-section">
+              <h3>Your Cards</h3>
+              <div class="accounts-container">
+                <div class="account">
+                  <div class="account-info">
+                    <p class="account-name">Main Card</p>
+                    <p>17, 850 USD</p>
+                  </div>
+                </div>
+                <div class="account">
+                  <div class="account-info">
+                    <p class="account-name">My Bills Card</p>
+                    <p>1, 930 USD</p>
+                  </div>
+                </div>
+                <div class="new-account">
+                  <p>+</p>
+                  <div class="new-account-text">
+                    <p>New</p>
+                    <p>Card</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section bottom-section">
+          <section class="transactions-section sub-section">
+            <h3>Card Transactions</h3>
+            <div class="transactions-container">
+              <ul class="transaction-items-fields">
+                <li>Amount</li>
+                <li>Type</li>
+                <li>Time</li>
+                <li>Status</li>
+              </ul>
+              <div class="transaction-item">
+                <ul class="transaction-items-content">
+                  <li>190 USD</li>
+                  <li>Transfer</li>
+                  <li>25/3/2022 14:56</li>
+                  <li>Fulfilled</li>
+                </ul>
+              </div>
+              <div class="transaction-item">
+                <ul class="transaction-items-content">
+                  <li>270 USD</li>
+                  <li>Online Purchase</li>
+                  <li>22/3/2022 12:00</li>
+                  <li>Fulfilled</li>
+                </ul>
+              </div>
+              <div class="transaction-item">
+                <ul class="transaction-items-content">
+                  <li>28 USD</li>
+                  <li>Online Purchase</li>
+                  <li>20/3/2022 17:48</li>
+                  <li>Fulfilled</li>
+                </ul>
+              </div>
+              <div class="transaction-item"></div>
+              <div class="transaction-item"></div>
+              <div class="transaction-item"></div>
+              <div class="transaction-item"></div>
+              <div class="transaction-item"></div>
+            </div>
+          </section>
+
+          <section class="transfer-section sub-section">
+            <h3>Transfer Money</h3>
+            <div class="transfer-container">
+              <div class="transfer-item transfer-types">
+                <a href="#" class="internal-t-btn">Internal Transfer</a
+                ><a href="#" class="external-t-btn active-transfer-btn"
+                  >External Transfer</a
+                >
+              </div>
+              <div class="transfer-item transfer-inputs">
+                <form action="">
+                  <div class="input-container">
+                    <label for="t-amount">Amount</label>
+                    <input type="text" id="t-amount" />
+                  </div>
+                  <div class="input-container">
+                    <label for="t-IBAN">IBAN</label>
+                    <input type="text" id="t-IBAN" />
+                  </div>
+                  <div class="input-container">
+                    <label for="t-BIC">BIC</label>
+                    <input type="text" id="t-BIC" />
+                  </div>
+                </form>
+              </div>
+              <div class="transfer-item transfer-btn-container">
+                <a href="#" class="transfer-btn">Transfer</a>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
