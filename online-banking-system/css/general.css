@@ -1,0 +1,280 @@
+:root {
+  --color-primary-light: #cde6f1;
+  --color-primary-dark: #023047;
+  --color-secondary: #8ecae6;
+  --color-accent: #ffb703;
+  --color-light: #f2f4f5;
+  --color-dark: #181e20;
+}
+
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+
+  /* border: 1px solid black; */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  line-height: 1;
+  /* overflow: hidden; */
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* GENERAL STYLES */
+.main-container {
+  max-width: 1600px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 1.2rem;
+  margin-top: 2.5rem;
+
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 10px;
+}
+
+/* NAVBAR */
+nav {
+  background-color: var(--color-primary-dark);
+}
+nav .main-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  opacity: 0.94;
+  transition: all 0.12s;
+  flex-wrap: wrap;
+}
+
+.nav-item.logo {
+  /* margin-right: auto; */
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--color-accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  min-height: 36px;
+  transition: all 0.12s;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--color-light);
+  transition: all 0.12s;
+}
+
+.nav-link a,
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  line-height: 1.5;
+  color: var(--color-light);
+  transition: all 0.12s;
+}
+
+.nav-link:hover {
+  border-radius: 8%;
+  border-bottom: 0.18rem solid var(--color-accent);
+  transition: all 0.12s;
+  transform: scale(1.06);
+}
+
+.nav-item.nav-left {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 0.3rem;
+}
+
+.nav-name-container {
+  display: flex;
+  gap: 0.2rem;
+  transition: all 0.12s;
+}
+.nav-name-container:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.nav-name {
+  font-weight: 500;
+  margin-left: 0.3rem;
+}
+
+.nav-down-arrow {
+  color: var(--color-accent);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.nav-name,
+.nav-down-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifcation-bell {
+  max-width: 1.8rem;
+  transition: all 0.12s;
+}
+
+.profile-pic {
+  max-width: 2.6rem;
+  margin-left: 1.2rem;
+}
+
+.notifcation-bell:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70vw;
+  max-height: 80vh;
+  background-color: var(--color-light);
+  padding: 4rem 5rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal__header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.modal__form {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.modal__form input {
+  background-color: #fff;
+  padding: 0.2rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 0.3rem;
+}
+
+.modal__form button {
+  margin-top: 0.8 rem;
+  grid-column: 1 / span 2;
+  justify-self: center;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.138);
+  color: #318ef8e9;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  transition: all 0.12s;
+}
+
+.modal__form button:hover {
+  cursor: pointer;
+  transition: all 0.12s;
+  transform: scale(1.06);
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
